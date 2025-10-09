@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$USER_HOME$/zulu21.44.17-ca-fx-jdk21.0.8-macosx_x64/zulu-21.jdk/Contents/Home/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$USER_HOME$/zulu21.44.17-ca-fx-jdk21.0.8-macosx_x64/zulu-21.jdk/Contents/Home/lib" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$USER_HOME$/zulu21.44.17-ca-fx-jdk21.0.8-macosx_x64/zulu-21.jdk/Contents/Home/lib" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/zulu21.44.17-ca-fx-jdk21.0.8-macosx_x64/zulu-21.jdk/Contents/Home/lib" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/zulu21.44.17-ca-fx-jdk21.0.8-macosx_x64/zulu-21.jdk/Contents/Home/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>
