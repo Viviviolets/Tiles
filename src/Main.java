@@ -16,7 +16,8 @@ public class Main extends Application {
     private ScoreManager scoreManager;
     private Label currentScoreLabel;
     private Label currentStreakLabel;
-    private Label longestStreakLabel;
+    private Tile firstTileSelected = null;
+    private Tile secondTitleSelected = null;
 
     public static void main(String[] args) {
         launch(args);
@@ -94,17 +95,6 @@ public class Main extends Application {
         currentStreakLabel.setStyle("-fx-text-fill: #F39C12;");
         streakBox.getChildren().addAll(streakLabel, currentStreakLabel);
 
-        // Longest Streak
-        VBox longestBox = new VBox(5);
-        longestBox.setAlignment(Pos.CENTER);
-        Text longestLabel = new Text("Longest Streak");
-        longestLabel.setFont(Font.font("Arial", 12));
-        longestLabel.setStyle("-fx-fill: #BDC3C7;");
-        longestStreakLabel = new Label("0");
-        longestStreakLabel.setFont(Font.font("Arial", 20));
-        longestStreakLabel.setStyle("-fx-text-fill: #27AE60;");
-        longestBox.getChildren().addAll(longestLabel, longestStreakLabel);
-
         // Test Buttons (remove these later when you have real gameplay)
         Button testBtn = new Button("TEST +10");
         testBtn.setPrefSize(120, 30);
@@ -122,7 +112,6 @@ public class Main extends Application {
                 scoreTitle,
                 scoreBox,
                 streakBox,
-                longestBox,
                 testBtn,
                 resetBtn
         );
@@ -173,6 +162,5 @@ public class Main extends Application {
     private void updateScoreDisplay() {
         currentScoreLabel.setText(String.valueOf(scoreManager.getCurrentScore()));
         currentStreakLabel.setText(String.valueOf(scoreManager.getCurrentStreak()));
-        longestStreakLabel.setText(String.valueOf(scoreManager.getLongestStreak()));
     }
 }
